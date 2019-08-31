@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>色子练习</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: center;
+            margin-top: 250px;
+        }
+
+        [class$="face"] {
+            margin: 16px;
+            padding: 4px;
+            background-color: #e7e7e7;
+            width: 104px;
+            height: 104px;
+            object-fit: contain;
+            box-shadow:
+                inset 0 5px white,
+                inset 0 -5px #bbb,
+                inset 5px 0 #d7d7d7,
+                inset -5px 0 #d7d7d7;
+            border-radius: 10%;
+        }
+
+        .pip {
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin: 4px;
+            background-color: #333;
+            box-shadow: inset 0 3px #111, inset 0 -3px #555;
+        }
+
+        .first-face {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .b-face {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .b-face span:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .c-face {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .c-face span:nth-child(2) {
+            align-self: center;
+        }
+
+        .c-face span:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .d-face {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .d-face span:nth-child(1) {
+            align-self: flex-start;
+        }
+
+        .d-face span:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        .d-face .a {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .e-face {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .e-face div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .e-face .b {
+            justify-content: center;
+        }
+
+        .f-face {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .f-face div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="first-face">
+            <span class="pip"></span>
+        </div>
+
+        <div class="b-face">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+
+        <div class="c-face">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </div>
+
+        <div class="d-face">
+            <div class="a">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+            <div class="a">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+
+        <div class="e-face">
+            <div class="a">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+            <div class="b">
+                <span class="pip"></span>
+            </div>
+            <div class="a">
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+
+        <div class="f-face">
+            <div class="a">
+                <span class="pip"></span>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+            <div class="a">
+                <span class="pip"></span>
+                <span class="pip"></span>
+                <span class="pip"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
